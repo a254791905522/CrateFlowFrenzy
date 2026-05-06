@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy — Crate Flow Frenzy</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --paper: #f6f1e8;
+            --card: #fffdf8;
+            --ink: #2c2824;
+            --muted: rgba(44, 40, 36, 0.74);
+            --dock: #d95d39;
+            --lane: #5a7d6a;
+            --grid: rgba(44, 40, 36, 0.06);
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            color: var(--ink);
+            min-height: 100vh;
+            background-color: var(--paper);
+            background-image:
+                linear-gradient(var(--grid) 1px, transparent 1px),
+                linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+            background-size: 28px 28px;
+            padding: 28px 16px 56px;
+        }
+
+        .wrap {
+            width: min(720px, 100%);
+            margin: 0 auto;
+        }
+
+        .top-card {
+            background: var(--card);
+            border: 3px solid var(--ink);
+            border-radius: 20px;
+            padding: 28px 24px;
+            box-shadow: 8px 8px 0 var(--ink);
+            margin-bottom: 22px;
+        }
+
+        .top-card h1 {
+            font-family: 'Fredoka', sans-serif;
+            font-weight: 700;
+            font-size: clamp(1.55rem, 4vw, 2.1rem);
+            line-height: 1.15;
+            color: var(--dock);
+        }
+
+        .top-card .sub {
+            margin-top: 12px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--muted);
+            line-height: 1.6;
+        }
+
+        .quick {
+            display: grid;
+            gap: 12px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            margin-top: 20px;
+        }
+
+        .quick-item {
+            border: 2px solid var(--ink);
+            border-radius: 14px;
+            padding: 14px 16px;
+            background: rgba(90, 125, 106, 0.12);
+        }
+
+        .quick-item strong {
+            font-family: 'Fredoka', sans-serif;
+            font-size: 0.82rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            display: block;
+            color: var(--lane);
+            margin-bottom: 6px;
+        }
+
+        .quick-item span {
+            font-size: 0.92rem;
+            font-weight: 600;
+            color: var(--muted);
+            line-height: 1.5;
+        }
+
+        .section {
+            background: var(--card);
+            border: 3px solid var(--ink);
+            border-radius: 18px;
+            padding: 22px 22px 20px;
+            margin-bottom: 16px;
+            box-shadow: 5px 5px 0 rgba(44, 40, 36, 0.12);
+        }
+
+        .section h2 {
+            font-family: 'Fredoka', sans-serif;
+            font-size: 1.1rem;
+            color: var(--ink);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section h2 .num {
+            min-width: 2rem;
+            height: 2rem;
+            display: grid;
+            place-items: center;
+            background: var(--dock);
+            color: var(--card);
+            border: 2px solid var(--ink);
+            border-radius: 8px;
+            font-size: 0.95rem;
+        }
+
+        .section p,
+        .section li {
+            font-size: 0.98rem;
+            font-weight: 600;
+            color: var(--muted);
+            line-height: 1.72;
+        }
+
+        .section p + p {
+            margin-top: 12px;
+        }
+
+        .section ul {
+            margin-top: 10px;
+            padding-left: 1.2em;
+        }
+
+        .section li {
+            margin-bottom: 8px;
+        }
+
+        .callout {
+            margin-top: 8px;
+            padding: 16px 18px;
+            border-left: 5px solid var(--lane);
+            background: rgba(90, 125, 106, 0.1);
+            border-radius: 0 12px 12px 0;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--muted);
+            line-height: 1.65;
+        }
+
+        nav.back {
+            margin-top: 28px;
+            text-align: center;
+        }
+
+        nav.back a {
+            font-family: 'Fredoka', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--lane);
+            text-decoration: none;
+            border-bottom: 3px solid rgba(196, 163, 90, 0.85);
+            padding-bottom: 2px;
+        }
+
+        nav.back a:hover {
+            color: var(--dock);
+            border-bottom-color: var(--dock);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="top-card">
+            <h1>Crate Flow Frenzy — Privacy Overview</h1>
+            <p class="sub">Plain-language notes for players. This page is informational only and may be updated when the game or platform rules change. Last revised: May 6, 2026.</p>
+            <div class="quick" role="list">
+                <div class="quick-item" role="listitem">
+                    <strong>Game</strong>
+                    <span>Crate Flow Frenzy (mobile puzzle on the App Store).</span>
+                </div>
+                <div class="quick-item" role="listitem">
+                    <strong>Store labels</strong>
+                    <span>If the App Store privacy nutrition label for your installed version differs from this summary, follow the label for that build.</span>
+                </div>
+            </div>
+        </header>
+
+        <article class="section">
+            <h2><span class="num">1</span> What this page is for</h2>
+            <p>These notes explain, in everyday language, how the title may interact with information on your device. They are not a contract and not legal advice.</p>
+        </article>
+
+        <article class="section">
+            <h2><span class="num">2</span> Data collection (high level)</h2>
+            <p>According to the App Store listing for this game at the time this page was written, the release is described as not collecting data in the categories Apple uses for its privacy questionnaire. Future updates could change that disclosure—check the store page after each update.</p>
+            <div class="callout">If you see different privacy labels on the App Store, trust the label tied to the version you downloaded.</div>
+        </article>
+
+        <article class="section">
+            <h2><span class="num">3</span> On-device storage</h2>
+            <p>The app may save progress, preferences, or similar items locally so levels and settings persist between launches. That data ordinarily remains on the phone or tablet unless you use system backup features managed outside the game.</p>
+        </article>
+
+        <article class="section">
+            <h2><span class="num">4</span> Apple platform</h2>
+            <p>Installation, updates, Family Sharing, Screen Time, and purchases run through Apple’s services and your Apple ID settings. Those flows are governed by Apple’s policies and the choices you set on the device.</p>
+        </article>
+
+        <article class="section">
+            <h2><span class="num">5</span> Advertising &amp; optional rewards</h2>
+            <p>Some builds may show ads or offer optional rewards tied to ad views. Ad delivery and any measurement that ad partners perform are handled by the networks and SDKs included in that version, subject to iOS privacy controls (such as tracking permissions) and your device settings.</p>
+        </article>
+
+        <article class="section">
+            <h2><span class="num">6</span> Younger players</h2>
+            <p>The game is listed for broad audiences. Parents and guardians can use Ask to Buy, Screen Time, and other iOS tools to manage installs and play time.</p>
+        </article>
+
+        <article class="section">
+            <h2><span class="num">7</span> Changes</h2>
+            <p>This overview may be edited to stay aligned with the shipped app and store disclosures. The date at the top marks the latest refresh of this text.</p>
+            <ul>
+                <li>No mailing addresses, email inboxes, or social profiles are published here.</li>
+                <li>No third-party marketing sites are linked from this document.</li>
+            </ul>
+        </article>
+
+        <nav class="back">
+            <a href="index.html">← Back to game overview</a>
+        </nav>
+    </div>
+</body>
+
+</html>
