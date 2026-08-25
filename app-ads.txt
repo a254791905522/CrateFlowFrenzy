@@ -1,4 +1,5 @@
 google.com, pub-8415335551233195, DIRECT, f08c47fec0942fa0
+facebook.com, 28219551377664092, DIRECT, c3e20eee3f780d68
 e-planning.net, 2f3a04630ba9ba3f, RESELLER, c1ba615865ed87b2
 yandex.com, 326002321, DIRECT
 pubmatic.com, 165157, RESELLER, 5d62403b186f2ace
